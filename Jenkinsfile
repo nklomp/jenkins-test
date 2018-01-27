@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-@Library('github.com/Sphereon/pipeline-library@master') _
+@Library('github.com/Sphereon/pipeline-library@master')
 
 def canaryVersion = "1.0.${env.BUILD_NUMBER}"
 def utils = new io.fabric8.Utils()
@@ -43,7 +43,7 @@ node {
         echo'############ Build '+ canaryVersion
         echo'###########################################'
 
-        mavenCi{}
+        mavenCI{}
 
 /*        stage('Deploy') {
             // Maven installation declared in the Jenkins "Global Tool Configuration"
