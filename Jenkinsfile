@@ -3,7 +3,7 @@
 
 def canaryVersion = "1.0.${env.BUILD_NUMBER}"
 def utils = new io.fabric8.Utils()
-node {
+mavenNode {
 
  // Checkout code from repository
     stage('Checkout source') {
