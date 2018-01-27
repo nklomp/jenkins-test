@@ -43,7 +43,7 @@ node {
         echo'############ Build '+ canaryVersion
         echo'###########################################'
 
-        mavenCi()
+        mavenCi{}
 
 /*        stage('Deploy') {
             // Maven installation declared in the Jenkins "Global Tool Configuration"
