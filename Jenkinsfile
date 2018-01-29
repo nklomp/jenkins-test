@@ -9,11 +9,7 @@ mavenNode {
 
  // Checkout code from repository
     stage('Checkout source') {
-        test = checkout scm
 
-        for (s in test) {
-            println s + " ====> " + test[s]
-        }
 
     }
 
