@@ -3,12 +3,18 @@
 
 def canaryVersion = "1.0.${env.BUILD_NUMBER}"
 def utils = new io.fabric8.Utils()
+
+def test
 mavenNode {
 
  // Checkout code from repository
     stage('Checkout source') {
-        checkout scm
+        test = checkout scm
+
     }
+
+
+echo test
 
 /**
     def branch = utils.getBranch();
