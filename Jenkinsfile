@@ -11,10 +11,12 @@ mavenNode {
     stage('Checkout source') {
         test = checkout scm
 
+        for (s in test) {
+            println s + " ====> " + test[s]
+        }
+
     }
 
-
-echo test
 
 /**
     def branch = utils.getBranch();
