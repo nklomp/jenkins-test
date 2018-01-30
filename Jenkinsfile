@@ -9,7 +9,7 @@ mavenNode {
 
  // Checkout code from repository
     stage('Checkout source') {
-
+        checkout scm
 
     }
 
