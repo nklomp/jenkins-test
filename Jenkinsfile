@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-@Library('github.com/Sphereon/pipeline-library@master')
+// @ Library('github.com/Sphereon/pipeline-library@master')
 
 def canaryVersion = "1.0.${env.BUILD_NUMBER}"
 def utils = new io.fabric8.Utils()
