@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>com.sphereon.public</groupId>
+    <groupId>com.sphereon.jenkins-testing</groupId>
     <artifactId>easy-blockchain-lib-modules</artifactId>
     <version>0.1.1-SNAPSHOT</version>
 
