@@ -16,12 +16,12 @@ mavenNode {
 
 
     def branch = utils.getBranch();
-    def branchType = getBranchType(branch)
-    def environment = getDeploymentEnvironmentFromBranchType(branchType)
+    def branchType = utils.getBranchType(branch)
+    def environment = utils.getDeploymentEnvironmentFromBranchType(branchType)
 
     echo "======> Building branch ${branch} of type ${branchType} for env ${environment}"
 
-    if (true || utils.isCI()){
+    if (utils.isCI()){
         echo'###########################################'
         echo'############ Build snapshot lib '+ canaryVersion
         echo'###########################################'
