@@ -18,8 +18,9 @@ mavenNode {
     def branch = utils.getBranch();
     def branchType = utils.getBranchType(branch)
     def environment = utils.getDeploymentEnvironmentFromBranchType(branchType)
+    def pr = utils.isPR()
 
-    echo "======> Building branch ${branch} of type ${branchType} for env ${environment}"
+    echo "======> Building branch ${branch} of type ${branchType} for env ${environment}, is PR: ${pr}"
 
     if (utils.isCI()){
         echo'###########################################'
