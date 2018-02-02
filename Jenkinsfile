@@ -47,7 +47,7 @@ mavenNode {
         echo'############ Build '+ canaryVersion
         echo'###########################################'
 
-        mavenCI{}
+        mavenDeploySnasphotLib{}
 
 /*        stage('Deploy') {
             // Maven installation declared in the Jenkins "Global Tool Configuration"
