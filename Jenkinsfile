@@ -20,7 +20,11 @@ mavenNode {
     def ns = utils.getKubernetesNamespaceFromBranchType(branchType)
     def pr = utils.isPR()
 
+    def source = utils.getSourceBranch()
+    def target = utils.getTargetBranch()
+
     echo "======> Building branch ${branch} of type ${branchType} for namespace ${ns}, is PR: ${pr}"
+    echp "Source: ${source}, Target: ${target}"
 
     if (utils.isCI()){
         echo'###########################################'
