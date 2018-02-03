@@ -24,7 +24,7 @@ mavenNode {
     def target = utils.getTargetBranch()
 
     echo "======> Building branch ${branch} of type ${branchType} for namespace ${ns}, is PR: ${pr}"
-    echp "Source: ${source}, Target: ${target}"
+    echo "Source: ${source}, Target: ${target}"
 
     if (utils.isCI()){
         echo'###########################################'
