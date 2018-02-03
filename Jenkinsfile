@@ -17,10 +17,10 @@ mavenNode {
 
     def branch = utils.getBranch();
     def branchType = utils.getBranchType(branch)
-    def environment = utils.getDeploymentEnvironmentFromBranchType(branchType)
+    def ns = utils.getKubernetesNamespaceFromBranchType(branchType)
     def pr = utils.isPR()
 
-    echo "======> Building branch ${branch} of type ${branchType} for env ${environment}, is PR: ${pr}"
+    echo "======> Building branch ${branch} of type ${branchType} for namespace ${ns}, is PR: ${pr}"
 
     if (utils.isCI()){
         echo'###########################################'
