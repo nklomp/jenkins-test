@@ -5,6 +5,9 @@ def canaryVersion = "1.0.${env.BUILD_NUMBER}"
 def utils = new io.fabric8.Utils()
 
 def test
+
+     sh 'env | sort'
+
 mavenNode {
 
  // Checkout code from repository
@@ -25,6 +28,7 @@ mavenNode {
 
     echo "======> Building branch ${branch} of type ${branchType} for namespace ${ns}, is PR: ${pr}"
     echo "Source: ${source}, Target: ${target}"
+
 
 
 
