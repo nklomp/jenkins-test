@@ -144,6 +144,7 @@
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>${gitflow-maven-plugin.version}</version>
                 <configuration>
+                    <verbose>true</verbose>
                     <!-- optional configuration -->
                 </configuration>
             </plugin>
