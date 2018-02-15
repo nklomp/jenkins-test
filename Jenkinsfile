@@ -15,7 +15,8 @@ mavenNode {
 
  // Checkout code from repository
     stage('Checkout source') {
-        checkout scm
+        def scmVars = checkout scm
+        echo "$scmVars"
 
     }
 
