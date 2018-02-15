@@ -14,13 +14,13 @@ node {
 mavenNode {
 
  // Checkout code from repository
-/*
+
     stage('Checkout source') {
         def scmVars = checkout scm
         echo "$scmVars"
 
     }
-*/
+
 
 
     def branch = utils.getBranch();
