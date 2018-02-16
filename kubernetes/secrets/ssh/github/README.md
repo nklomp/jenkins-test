@@ -1,6 +1,6 @@
 Create a secret named jenkins-maven-settings in namespace develop using the contents from the settings.xml with key settings.xml. This will result in the example jenkins-maven-settings.yaml but then applied to the Kubernetes cluster.
 
-    kubectl create secret -n develop generic jenkins-ssh-config --from-file=./id_rsa --from-file=./id_rsa.pub
+    kubectl create secret -n develop generic jenkins-ssh-config --from-file=./id_rsa --from-file=./id_rsa.pub  --from-file=./known_hosts
     
 To apply the yam manually use the yaml from this directory and use
 
