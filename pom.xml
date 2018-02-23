@@ -23,7 +23,7 @@
 
     <groupId>com.sphereon.jenkins-testing</groupId>
     <artifactId>easy-blockchain-lib-modules</artifactId>
-    <version>0.1.7</version>
+    <version>0.1.8-SNAPSHOT</version>
 
 
     <packaging>pom</packaging>
